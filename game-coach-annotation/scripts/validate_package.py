@@ -8,7 +8,7 @@ assert skill.startswith('---\n')
 head = skill.split('---', 2)[1]
 assert re.search(r'^name: game-coach-annotation$', head, re.M)
 assert re.search(r'^description: .+', head, re.M)
-assert re.search(r'^\s+version: "1\.0"$', head, re.M)
+assert re.search(r'^\s+version: "1\.1"$', head, re.M)
 assert len(skill.splitlines()) < 500
 for md in root.rglob('*.md'):
     for rel in re.findall(r'\]\(([^)#]+)(?:#[^)]+)?\)', md.read_text(encoding='utf-8')):

@@ -8,7 +8,7 @@ assert skill.startswith("---\n"), "missing YAML frontmatter"
 head = skill.split("---", 2)[1]
 assert re.search(r"^name: game-coach-kb$", head, re.M), "invalid skill name"
 assert re.search(r"^description: .+", head, re.M), "missing description"
-assert re.search(r'^\s+version: "6\.0"$', head, re.M), "missing version metadata"
+assert re.search(r'^\s+version: "6\.1"$', head, re.M), "missing version metadata"
 assert "王者" not in skill and "英雄" not in skill, "game-specific vocabulary in core"
 for md in ROOT.rglob("*.md"):
     for rel in re.findall(r"\]\(([^)#]+)(?:#[^)]+)?\)", md.read_text(encoding="utf-8")):

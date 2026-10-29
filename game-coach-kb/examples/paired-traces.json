@@ -35,7 +35,7 @@
       "evidence_ids": ["strategy-23"],
       "missing_conditions": ["allied_positions_known", "key_resource_ready"],
       "reason_code": "state_missing",
-      "versions": {"skill": "6.0", "kb_snapshot": "kb-14", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
+      "versions": {"skill": "6.1", "kb_snapshot": "kb-14", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
       "trace_id": "trace-team-01"
     }
   },
@@ -75,7 +75,7 @@
       "evidence_ids": ["rule-77"],
       "missing_conditions": ["battle_log"],
       "reason_code": "state_missing",
-      "versions": {"skill": "6.0", "kb_snapshot": "kb-21", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
+      "versions": {"skill": "6.1", "kb_snapshot": "kb-21", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
       "trace_id": "trace-rpg-01"
     }
   }

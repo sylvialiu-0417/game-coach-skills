@@ -1,51 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1140" viewBox="0 0 1800 1140">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
 <rect width="100%" height="100%" fill="white"/>
-<text x="900" y="77.48" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="48" fill="#182B42">专家复盘标注与数据分流流程</text>
-<rect x="40" y="165" width="300" height="180" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="190.0" y="239.16" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">授权素材</text>
-<text x="190.0" y="288.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">录像 / 截图 / 事件</text>
-<rect x="390" y="165" width="300" height="180" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="540.0" y="239.16" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">机器预标注</text>
-<text x="540.0" y="288.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">观察提取 Skill</text>
-<rect x="740" y="165" width="300" height="180" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="890.0" y="239.16" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">事实核对</text>
-<text x="890.0" y="288.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">对象 / 状态 / 时间</text>
-<rect x="1090" y="165" width="300" height="180" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="1240.0" y="239.16" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">专家判断</text>
-<text x="1240.0" y="288.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">依据 / 前提 / 例外</text>
-<rect x="1440" y="165" width="300" height="180" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="1590.0" y="239.16" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">独立复核</text>
-<text x="1590.0" y="288.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">分歧记录与仲裁</text>
-<polyline points="340,255 390,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="390,255 372.7296507561772,262.92054524615503 372.7296507561772,247.079454753845" fill="#486A87"/>
-<polyline points="690,255 740,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="740,255 722.7296507561772,262.92054524615503 722.7296507561772,247.079454753845" fill="#486A87"/>
-<polyline points="1040,255 1090,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="1090,255 1072.729650756177,262.92054524615503 1072.729650756177,247.079454753845" fill="#486A87"/>
-<polyline points="1390,255 1440,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="1440,255 1422.729650756177,262.92054524615503 1422.729650756177,247.079454753845" fill="#486A87"/>
-<rect x="570" y="485" width="660" height="160" rx="18" fill="#EAF2F8" stroke="#61788E" stroke-width="3"/>
-<text x="900.0" y="547.72" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">登记数据用途并隔离</text>
-<text x="900.0" y="601.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">按对局与玩家划分 train / dev / test</text>
-<polyline points="1590,345 1590,410 900,410 900,485" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="900,485 892.079454753845,467.7296507561772 907.920545246155,467.7296507561772" fill="#486A87"/>
-<rect x="40" y="800" width="500" height="170" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
-<text x="290.0" y="867.72" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">事实标签集</text>
-<text x="290.0" y="921.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">感知训练 / 调参与验证</text>
-<rect x="650" y="800" width="500" height="170" rx="18" fill="#EAF5EF" stroke="#5E8972" stroke-width="3"/>
-<text x="900.0" y="867.72" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">判据与案例候选</text>
-<text x="900.0" y="921.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">审核 → 回归 → 发布知识</text>
-<rect x="1260" y="800" width="500" height="170" rx="18" fill="#FFF6E9" stroke="#AD8A52" stroke-width="3"/>
-<text x="1510.0" y="867.72" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">独立测试集</text>
-<text x="1510.0" y="921.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">冻结；不回流调试</text>
-<polyline points="730,645 730,715 290,715 290,800" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="290,800 282.07945475384497,782.7296507561772 297.92054524615503,782.7296507561772" fill="#486A87"/>
-<text x="430" y="687.54" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="29" fill="#486A87">train / dev</text>
-<polyline points="900,645 900,800" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="900,800 892.079454753845,782.7296507561772 907.920545246155,782.7296507561772" fill="#486A87"/>
-<text x="1040" y="772.54" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="29" fill="#486A87">仅 train / dev</text>
-<polyline points="1070,645 1070,715 1510,715 1510,800" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
-<polygon points="1510,800 1502.079454753845,782.7296507561772 1517.920545246155,782.7296507561772" fill="#486A87"/>
-<text x="1415" y="687.54" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="29" fill="#486A87">test</text>
-<text x="900" y="1068.58" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">标注审定完成后，模型训练与知识发布仍由各自的服务流程执行</text>
+<text x="900" y="76.96000000000001" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="46" fill="#182B42">目标游戏的专家标注与数据分流 SOP</text>
+<rect x="40" y="165" width="420" height="190" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="250.0" y="243.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">授权素材</text>
+<text x="250.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">录像 / 截图 / 事件</text>
+<rect x="650" y="165" width="500" height="190" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="900.0" y="243.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">game-coach-perception</text>
+<text x="900.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">机器预标注草稿</text>
+<rect x="1340" y="165" width="420" height="190" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="1550.0" y="243.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">game-coach-annotation</text>
+<text x="1550.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">专家复盘标注 SOP</text>
+<polyline points="460,260 650,260" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="650,260 632.7296507561772,267.92054524615503 632.7296507561772,252.079454753845" fill="#486A87"/>
+<polyline points="1150,260 1340,260" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1340,260 1322.729650756177,267.92054524615503 1322.729650756177,252.079454753845" fill="#486A87"/>
+<rect x="330" y="495" width="1140" height="180" rx="18" fill="#EAF2F8" stroke="#61788E" stroke-width="3"/>
+<text x="900.0" y="567.72" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">事实核对 → 专家判断 → 独立复核与仲裁</text>
+<text x="900.0" y="621.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="36" fill="#182B42">登记用途，按对局与玩家隔离 train / dev / test</text>
+<polyline points="1550,355 1550,425 900,425 900,495" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="900,495 892.079454753845,477.7296507561772 907.920545246155,477.7296507561772" fill="#486A87"/>
+<rect x="40" y="850" width="500" height="210" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="290.0" y="938.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">事实标签集</text>
+<text x="290.0" y="989.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">感知模型训练与验证</text>
+<rect x="650" y="850" width="500" height="210" rx="18" fill="#EAF5EF" stroke="#5E8972" stroke-width="3"/>
+<text x="900.0" y="915.96" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">判据与案例候选</text>
+<text x="900.0" y="963.32" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">审核 → 回归 → 发布</text>
+<text x="900.0" y="1010.6800000000001" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">供 game-coach-kb 调用</text>
+<rect x="1260" y="850" width="500" height="210" rx="18" fill="#FFF6E9" stroke="#AD8A52" stroke-width="3"/>
+<text x="1510.0" y="938.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">独立测试集</text>
+<text x="1510.0" y="989.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">冻结；不回流调试</text>
+<polyline points="650,675 650,755 290,755 290,850" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="290,850 282.07945475384497,832.7296507561772 297.92054524615503,832.7296507561772" fill="#486A87"/>
+<text x="430" y="722.28" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="28" fill="#486A87">train / dev</text>
+<polyline points="900,675 900,850" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="900,850 892.079454753845,832.7296507561772 907.920545246155,832.7296507561772" fill="#486A87"/>
+<text x="1030" y="817.28" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="28" fill="#486A87">仅 train / dev</text>
+<polyline points="1150,675 1150,755 1510,755 1510,850" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1510,850 1502.079454753845,832.7296507561772 1517.920545246155,832.7296507561772" fill="#486A87"/>
+<text x="1410" y="722.28" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="28" fill="#486A87">test</text>
+<text x="900" y="1148.58" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="33" fill="#182B42">标注审定、模型训练和知识发布分别执行；三者保留独立状态</text>
 </svg>

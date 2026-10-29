@@ -1,9 +1,9 @@
 {"id":"T01","query":"把现有游戏攻略库接入 AI 教练，先检查什么？","expected":"trigger","reason":"已有库接入"}
 {"id":"T02","query":"这个教练总引用旧版本规则，帮我定位问题","expected":"trigger","reason":"版本证据诊断"}
-{"id":"T03","query":"设计一个跨游戏 AI 教练的知识检索和回退流程","expected":"trigger","reason":"跨游戏教练运行"}
+{"id":"T03","query":"设计一个可按游戏适配的 AI 教练的知识检索和回退流程","expected":"trigger","reason":"目标游戏的教练流程适配"}
 {"id":"T04","query":"局内教练只看到资源差，能否给团队进攻提示？","expected":"trigger","reason":"状态前提判断"}
 {"id":"T05","query":"给赛后复盘 Agent 设计知识和战斗记录调用","expected":"trigger","reason":"复盘调用"}
-{"id":"T06","query":"评测教练 Skill 是否让问答质量变好","expected":"trigger","reason":"Skill 执行评测"}
+{"id":"T06","query":"评测game-coach-kb 是否让问答质量变好","expected":"trigger","reason":"Skill 执行评测"}
 {"id":"T07","query":"已有知识库里有正确内容但教练答不出来","expected":"trigger","reason":"检索漏召诊断"}
 {"id":"T08","query":"新游戏上线时怎样复用同一套教练知识能力？","expected":"trigger","reason":"新增游戏适配"}
 {"id":"T09","query":"给 AI 教练做知识版本更新和回归测试规范","expected":"trigger","reason":"教练知识维护"}
@@ -22,5 +22,5 @@
 {"id":"T22","query":"这条游戏规则是不是过期了？","expected":"boundary","reason":"需确认是否是教练知识库条目"}
 {"id":"T23","query":"帮我做个 AI NPC","expected":"boundary","reason":"NPC 目标可能不是教练知识调用"}
 {"id":"T24","query":"整理我的游戏笔记","expected":"boundary","reason":"笔记整理不一定接入教练"}
-{"id":"T25","query":"把这段游戏录像识别成带时间戳的状态和事件，不需要教练建议","expected":"skip","reason":"应由感知 Skill 处理"}
+{"id":"T25","query":"把这段游戏录像识别成带时间戳的状态和事件，不需要教练建议","expected":"skip","reason":"应由game-coach-perception 处理"}
 {"id":"T26","query":"结合现有攻略知识和录像观察，帮教练给出赛后训练计划","expected":"trigger","reason":"知识与观察结合生成训练计划"}

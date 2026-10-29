@@ -1,16 +1,16 @@
 ---
 name: game-coach-kb
 description: >-
-  接入已有游戏知识库，指导跨游戏 AI 教练 Agent 检索知识、核验状态、给出建议及复盘训练计划。用于教练问答、局内提示、赛后复盘和知识改进；不负责读取游戏画面或直接发布知识。
+  为目标游戏定义知识库管理与教练决策 SOP，指导 Agent 检索知识、核验状态、回答问题及复盘训练计划。用于教练问答、局内提示、赛后复盘和知识改进；需先完成该游戏的配置与验证。
 metadata:
-  version: "6.0"
+  version: "6.1"
 ---
 
-# 游戏 AI 教练知识调用
+# game-coach-kb 游戏知识管理与教练决策 SOP
 
 ## 目标与适用判断
 
-让不同游戏的教练 Agent 用**已有、可追溯的知识库**完成有依据的回答或建议，并把失败定位到正确的改进层。开始前检查三项：可信宿主能否提供当前 `game_id/ruleset_id/coach_id`，是否有可查询的已发布知识，是否存在当前游戏的适配配置。任一项缺失时记录接入缺口，不生成该游戏的确定性攻略或局内指挥。知识库接入检查读 [onboarding.md](references/onboarding.md)。
+指导目标游戏的教练 Agent 按同一 SOP 使用**已有、可追溯的知识库**，完成有依据的回答或建议，并把失败定位到正确的改进层。每个新游戏都需单独提供知识、适配配置、状态来源和评测集；本包的虚构示例只说明流程用法。开始前检查三项：可信宿主能否提供当前 `game_id/ruleset_id/coach_id`，是否有可查询的已发布知识，是否存在当前游戏的适配配置。任一项缺失时记录接入缺口，不生成该游戏的确定性攻略或局内指挥。知识库接入检查读 [onboarding.md](references/onboarding.md)。
 
 本 Skill 只规定知识调用、教练判断与反馈决策。Agent 运行时负责会话和工具；游戏适配器定义实体、玩法前提和可观察状态；教练配置定义能力、触发及打断预算；服务端负责授权、版本隔离和发布。分工见 [architecture.md](references/architecture.md)。游戏术语和固定阈值不得写进通用入口，因为换游戏后其含义可能失效。
 
@@ -23,7 +23,7 @@ metadata:
 | 玩家问答或策略建议 | [runtime.md](references/runtime.md) 与 [contracts.md](references/contracts.md) | 证据为当前游戏、模式、版本的已发布条目；建议前提已核对 |
 | 主动局内提示、赛后复盘或训练计划 | [runtime.md](references/runtime.md)、[expert-analysis.md](references/expert-analysis.md) 与当前游戏适配器 | 观察或历史记录获授权且足够新；每项诊断能回到事件证据和专业判据 |
 | 错答反馈与知识更新 | [maintenance.md](references/maintenance.md) | 先判知识、检索、状态、决策或交互原因；玩家会话不发布知识 |
-| 修改本 Skill 或新增游戏 | [evaluation.md](references/evaluation.md) | 用独立样本测触发和执行，至少覆盖两类游戏 |
+| 修改本 Skill 或新增游戏 | [evaluation.md](references/evaluation.md) | 在目标游戏、规则版本和教练任务上分别验收；新增游戏独立适配 |
 
 ## 服务调用检查点
 

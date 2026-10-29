@@ -3,10 +3,10 @@ name: game-coach-annotation
 description: >-
   将获授权的游戏录像、截图与事件整理为可审定的事实标注和专家判断。用于制作 AI 教练的感知训练数据、专业判据候选与独立评测集；不用于玩家实时建议、执行模型训练或直接发布知识。
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
-# 游戏教练专家复盘标注
+# game-coach-annotation 专家复盘标注 SOP
 
 ## 目标与适用判断
 

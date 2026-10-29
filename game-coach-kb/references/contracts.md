@@ -12,7 +12,7 @@
 
 ## 状态与输出
 
-`get_state` 返回 [状态 Schema](../schemas/game-state.schema.json) 中的 `observed_at, observable_fields, values, authority_scope`；也可返回感知 Skill 的 `ObservationBundle` 引用。没有字段不等于其值为否，模型推断字段不等于直接观察。缺少同意或权限时不读取个人状态与历史记录。结果输出 `game_id, coach_id, decision, player_text, evidence_ids, missing_conditions, reason_code, versions, trace_id`；实际给出复盘诊断时，`diagnostics` 中逐项附 `observation_ids` 与 `rubric_ids`；主动提示另含 `display_ttl_ms`。不许把数值置信度当成证据充分性的替代。
+`get_state` 返回 [状态 Schema](../schemas/game-state.schema.json) 中的 `observed_at, observable_fields, values, authority_scope`；也可返回game-coach-perception 的 `ObservationBundle` 引用。没有字段不等于其值为否，模型推断字段不等于直接观察。缺少同意或权限时不读取个人状态与历史记录。结果输出 `game_id, coach_id, decision, player_text, evidence_ids, missing_conditions, reason_code, versions, trace_id`；实际给出复盘诊断时，`diagnostics` 中逐项附 `observation_ids` 与 `rubric_ids`；主动提示另含 `display_ttl_ms`。不许把数值置信度当成证据充分性的替代。
 
 ## 维护端
 
