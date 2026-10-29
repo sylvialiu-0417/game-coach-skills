@@ -9,7 +9,7 @@
 <text x="900.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">机器预标注草稿</text>
 <rect x="1340" y="165" width="420" height="190" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
 <text x="1550.0" y="243.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">game-coach-annotation</text>
-<text x="1550.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">专家复盘标注 SOP</text>
+<text x="1550.0" y="294.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">专家复盘标注 Skill</text>
 <polyline points="460,260 650,260" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
 <polygon points="650,260 632.7296507561772,267.92054524615503 632.7296507561772,252.079454753845" fill="#486A87"/>
 <polyline points="1150,260 1340,260" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>

@@ -6,13 +6,14 @@
 <text x="225.0" y="297.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">状态 API / 画面 / 音频</text>
 <rect x="485" y="160" width="380" height="210" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
 <text x="675.0" y="249.64" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">game-coach-perception</text>
-<text x="675.0" y="297.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">游戏观察提取</text>
+<text x="675.0" y="297.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">游戏观察提取 Skill</text>
 <rect x="935" y="160" width="380" height="210" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
 <text x="1125.0" y="249.64" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">观察条件核验</text>
 <text x="1125.0" y="297.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">授权 / 可见性 / 时效</text>
 <rect x="1385" y="160" width="380" height="210" rx="18" fill="#EAF2F8" stroke="#61788E" stroke-width="3"/>
-<text x="1575.0" y="249.64" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">game-coach-kb</text>
-<text x="1575.0" y="297.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">知识管理与教练决策</text>
+<text x="1575.0" y="225.96" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">game-coach-kb</text>
+<text x="1575.0" y="273.32" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">知识库管理与应用</text>
+<text x="1575.0" y="320.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="32" fill="#182B42">核心 Skill</text>
 <polyline points="415,265 485,265" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
 <polygon points="485,265 467.7296507561772,272.92054524615503 467.7296507561772,257.07945475384497" fill="#486A87"/>
 <polyline points="865,265 935,265" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>

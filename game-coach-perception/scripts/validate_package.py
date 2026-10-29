@@ -8,7 +8,7 @@ assert skill.startswith('---\n')
 head = skill.split('---', 2)[1]
 assert re.search(r'^name: game-coach-perception$', head, re.M)
 assert re.search(r'^description: .+', head, re.M)
-assert re.search(r'^\s+version: "2\.1"$', head, re.M)
+assert re.search(r'^\s+version: "2\.2"$', head, re.M)
 for md in root.rglob('*.md'):
     for rel in re.findall(r'\]\(([^)#]+)(?:#[^)]+)?\)', md.read_text(encoding='utf-8')):
         if '://' not in rel:

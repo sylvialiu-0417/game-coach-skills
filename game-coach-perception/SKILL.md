@@ -3,10 +3,12 @@ name: game-coach-perception
 description: >-
   将获授权的游戏画面、录像、音频或事件接口转换为带时间和证据定位的状态与事件。用于 AI 教练需要识别 2D 或 3D 游戏局势、复盘片段时；不负责攻略检索、战术判断或操控游戏。
 metadata:
-  version: "2.1"
+  version: "2.2"
 ---
 
-# game-coach-perception 游戏观察提取 SOP
+# 游戏观察提取 Skill
+
+Skill 标识：`game-coach-perception`，与文件夹名及 YAML 的 `name` 一致。
 
 ## 目标与适用判断
 

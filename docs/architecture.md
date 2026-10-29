@@ -1,6 +1,6 @@
-# 三个 Skill 的职责与交接
+# 核心 Skill 与配套 Skill 的职责与交接
 
-线上使用与离线专家生产是两条互相连接的流程。
+方案以“游戏 AI 教练知识库管理与应用 Skill”（`game-coach-kb`）为核心。“游戏观察提取 Skill”（`game-coach-perception`）和“专家复盘标注 Skill”（`game-coach-annotation`）分别提供动态观察输入与经复核的专家知识素材。线上使用与离线专家生产是两条互相连接的流程。
 
 ## 线上使用
 
@@ -11,7 +11,7 @@
 3. game-coach-kb 检索当前规则与已发布专家判据，检查建议前提。
 4. 宿主按延迟、展示与打断策略决定是否将建议交给玩家。
 
-## game-coach-annotation 专家复盘生产
+## 专家复盘标注 Skill 的生产流程
 
 ![专家复盘标注与数据分流](figures/expert-annotation-flow.png)
 
