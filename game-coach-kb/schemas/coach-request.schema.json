@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game coach request",
+  "type": "object",
+  "required": ["request_id", "game_id", "ruleset_id", "mode_id", "coach_id", "task", "surface", "user_text", "consent"],
+  "properties": {
+    "request_id": {"type": "string", "minLength": 1},
+    "game_id": {"type": "string", "minLength": 1},
+    "ruleset_id": {"type": "string", "minLength": 1},
+    "mode_id": {"type": "string", "minLength": 1},
+    "coach_id": {"type": "string", "minLength": 1},
+    "task": {"enum": ["explain", "recommend", "live_tip", "review", "training_plan", "feedback"]},
+    "surface": {"enum": ["chat", "in_game", "post_game", "admin"]},
+    "user_text": {"type": "string"},
+    "state_ref": {"type": ["string", "null"]},
+    "observation_ref": {"type": ["string", "null"]},
+    "history_ref": {"type": ["string", "null"]},
+    "locale": {"type": "string"},
+    "consent": {"type": "boolean"},
+    "trigger_event": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

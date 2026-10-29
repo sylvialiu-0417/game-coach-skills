@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game Coach Observation Bundle",
+  "type": "object",
+  "required": ["schema_version", "game_id", "ruleset_id", "session_id", "viewpoint_id", "viewpoint_type", "source_type", "captured_at", "status", "observations", "missing_fields", "conflicts", "model_version", "adapter_version", "consent_scope"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "game_id": {"type": "string", "minLength": 1},
+    "ruleset_id": {"type": "string", "minLength": 1},
+    "session_id": {"type": "string", "minLength": 1},
+    "viewpoint_id": {"type": "string", "minLength": 1},
+    "viewpoint_type": {"enum": ["player", "spectator", "replay"]},
+    "source_type": {"enum": ["official_api", "screenshot", "video", "audio", "mixed"]},
+    "captured_at": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["usable", "partial", "unusable"]},
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["observation_id", "kind", "entity_ref", "value", "t0_ms", "t1_ms", "epistemic_status", "visibility", "evidence_refs"],
+        "properties": {
+          "observation_id": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "minLength": 1},
+          "entity_ref": {"type": ["string", "null"]},
+          "value": {"type": "object"},
+          "t0_ms": {"type": "integer", "minimum": 0},
+          "t1_ms": {"type": "integer", "minimum": 0},
+          "epistemic_status": {"enum": ["observed", "inferred", "unknown"]},
+          "visibility": {"enum": ["player_visible", "spectator_only", "unknown"]},
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "modality", "locator"],
+              "properties": {
+                "source_id": {"type": "string", "minLength": 1},
+                "modality": {"enum": ["api", "frame", "video", "audio"]},
+                "locator": {"type": "string", "minLength": 1}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "missing_fields": {"type": "array", "items": {"type": "string"}},
+    "conflicts": {"type": "array", "items": {"type": "string"}},
+    "model_version": {"type": "string"},
+    "adapter_version": {"type": "string"},
+    "consent_scope": {"type": "string"}
+  },
+  "additionalProperties": false
+}

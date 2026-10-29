@@ -1,0 +1,13 @@
+{"id":"P01","scene":"可信 API 提供玩家可见资源","expected":"observed","focus":"API 事件引用"}
+{"id":"P02","scene":"2D HUD 显示数值但背景干扰","expected":"observed_or_unknown","focus":"OCR 数值校验"}
+{"id":"P03","scene":"装备界面未显示隐藏词缀","expected":"missing","focus":"不可见不等于否"}
+{"id":"P04","scene":"3D 第一人称转头导致左右方位变化","expected":"inferred_or_unknown","focus":"相机运动"}
+{"id":"P05","scene":"敌人短暂被遮挡","expected":"unknown","focus":"遮挡与身份追踪"}
+{"id":"P06","scene":"只听到脚步音效，没有画面确认","expected":"inferred","focus":"线索不等于确切位置"}
+{"id":"P07","scene":"两个重叠视频片段标记同一击杀","expected":"one_event_multiple_evidence","focus":"跨片段去重"}
+{"id":"P08","scene":"视频与音频有 300ms 偏移","expected":"realigned_or_partial","focus":"音画同步"}
+{"id":"P09","scene":"观战视角能看到玩家看不到的对象","expected":"spectator_only","focus":"视角隔离"}
+{"id":"P10","scene":"换版本后 HUD 改版，旧 OCR 模板失效","expected":"partial_or_unusable","focus":"版本漂移"}
+{"id":"P11","scene":"视频识别与可信 API 数值冲突","expected":"conflict","focus":"来源冲突"}
+{"id":"P12","scene":"未取得玩家音频授权","expected":"unusable","focus":"输入授权"}
+{"id":"P13","scene":"模型预标注未经专家复核却被当作参考答案","expected":"machine_draft","focus":"预标注与金标准分离"}

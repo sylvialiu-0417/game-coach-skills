@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game coach state observation",
+  "type": "object",
+  "required": ["observed_at", "observable_fields", "values", "authority_scope"],
+  "properties": {
+    "observed_at": {"type": ["string", "null"], "format": "date-time"},
+    "observable_fields": {"type": "array", "items": {"type": "string"}},
+    "values": {"type": "object"},
+    "authority_scope": {"type": "string"}
+  },
+  "additionalProperties": false
+}

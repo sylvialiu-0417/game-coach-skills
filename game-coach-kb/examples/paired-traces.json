@@ -1,0 +1,82 @@
+[
+  {
+    "request": {
+      "request_id": "demo-team-01",
+      "game_id": "starport-arena",
+      "ruleset_id": "patch-4",
+      "mode_id": "team_match",
+      "coach_id": "starport-live-advisor",
+      "task": "recommend",
+      "surface": "chat",
+      "user_text": "现在进攻目标吗？",
+      "state_ref": "state-101",
+      "consent": true
+    },
+    "retrieved_evidence": {
+      "evidence_id": "strategy-23",
+      "game_id": "starport-arena",
+      "content": "争夺目标前需确认队友位置和关键资源。",
+      "source_ref": "approved-guide-8",
+      "source_tier": "reviewed",
+      "ruleset_scope": "patch-4",
+      "mode_scope": ["team_match"],
+      "status": "published",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "applicability": ["allied_positions_known", "key_resource_ready"],
+      "retrieved_at": "2026-10-28T12:00:01Z"
+    },
+    "state": {"observed_at": "2026-10-28T12:00:00Z", "observable_fields": ["own_resource"], "values": {"own_resource": "slight_advantage"}, "authority_scope": "consented_player_view"},
+    "response": {
+      "game_id": "starport-arena",
+      "coach_id": "starport-live-advisor",
+      "decision": "conditional",
+      "player_text": "如果队友已经到位且关键资源可用，可以考虑进攻；目前我没有这些状态，不能判断这一波是否适合。",
+      "evidence_ids": ["strategy-23"],
+      "missing_conditions": ["allied_positions_known", "key_resource_ready"],
+      "reason_code": "state_missing",
+      "versions": {"skill": "6.0", "kb_snapshot": "kb-14", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
+      "trace_id": "trace-team-01"
+    }
+  },
+  {
+    "request": {
+      "request_id": "demo-rpg-01",
+      "game_id": "far-mountain-rpg",
+      "ruleset_id": "chapter-2",
+      "mode_id": "story",
+      "coach_id": "far-mountain-reviewer",
+      "task": "review",
+      "surface": "post_game",
+      "user_text": "我刚才为什么伤害低？",
+      "history_ref": null,
+      "consent": true
+    },
+    "retrieved_evidence": {
+      "evidence_id": "rule-77",
+      "game_id": "far-mountain-rpg",
+      "content": "某类敌人具有属性抗性，相关属性伤害会降低。",
+      "source_ref": "approved-rulebook-2",
+      "source_tier": "official",
+      "ruleset_scope": "chapter-2",
+      "mode_scope": ["story"],
+      "status": "published",
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "applicability": ["enemy_resistance_applies"],
+      "retrieved_at": "2026-10-28T12:01:00Z"
+    },
+    "state": {"observed_at": null, "observable_fields": [], "values": {}, "authority_scope": "none"},
+    "response": {
+      "game_id": "far-mountain-rpg",
+      "coach_id": "far-mountain-reviewer",
+      "decision": "clarify",
+      "player_text": "一种可能原因是敌人的属性抗性。若你愿意提供这场战斗的日志，我才能确认这次伤害偏低的具体原因。",
+      "evidence_ids": ["rule-77"],
+      "missing_conditions": ["battle_log"],
+      "reason_code": "state_missing",
+      "versions": {"skill": "6.0", "kb_snapshot": "kb-21", "adapter": "example-1", "coach_config": "example-1", "model": "demo-model"},
+      "trace_id": "trace-rpg-01"
+    }
+  }
+]

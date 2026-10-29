@@ -1,0 +1,20 @@
+[
+  {
+    "schema_version": "1.0", "case_id": "example-001", "game_id": "starport-arena", "ruleset_id": "patch-4", "mode_id": "team_match", "media_ref": "media:clip-42", "source_type": "video", "consent_scope": "player_replay_training", "license_ref": "license:internal-demo", "viewpoint_type": "player", "match_id": "match-A", "player_id_hash": "demo-player-A", "t0_ms": 42000, "t1_ms": 45000,
+    "objective_labels": [{"observation_id": "obs-001", "kind": "leave_cover", "value": {"direction": "right"}, "evidence_ref": "media:clip-42#42.0-45.0s", "t0_ms": 42000, "t1_ms": 45000, "visibility": "player_visible", "verification": "expert_verified"}],
+    "expert_judgments": [{"judgment_id": "judge-001", "claim": "在该目标与可见威胁下，出掩体前的预瞄准备不足", "rationale": "准星轨迹与当前目标要求不一致；不推断敌方隐藏位置", "observation_ids": ["obs-001"], "rubric_ref": "rubric:preaim-patch4", "applicability": ["目标是争夺可见区域", "当前视角包含准星轨迹"], "exceptions": ["快速转点且不存在预瞄机会时需另判"], "judgment_status": "conditional", "reviewer_id": "expert-A"}],
+    "review_status": "approved", "reviewers": ["expert-A", "expert-B"], "split": "train", "adjudication_note": "两名专家确认事实；判断保留适用条件"
+  },
+  {
+    "schema_version": "1.0", "case_id": "example-002", "game_id": "far-mountain-rpg", "ruleset_id": "chapter-2", "mode_id": "story", "media_ref": "media:item-screen-7", "source_type": "screenshot", "consent_scope": "player_screenshot_annotation", "license_ref": "license:internal-demo", "viewpoint_type": "player", "match_id": "session-B", "player_id_hash": "demo-player-B", "t0_ms": 33000, "t1_ms": 33000,
+    "objective_labels": [{"observation_id": "obs-002", "kind": "visible_item_label", "value": {"text": "防御 +12"}, "evidence_ref": "media:item-screen-7#bbox:120,40,240,90", "t0_ms": 33000, "t1_ms": 33000, "visibility": "player_visible", "verification": "expert_verified"}],
+    "expert_judgments": [{"judgment_id": "judge-002", "claim": "无法仅凭截图判定是否适合当前构筑", "rationale": "缺少角色流派和关卡目标", "observation_ids": ["obs-002"], "rubric_ref": null, "applicability": [], "exceptions": [], "judgment_status": "insufficient_evidence", "reviewer_id": "expert-C"}],
+    "review_status": "reviewed", "reviewers": ["expert-C"], "split": "dev", "adjudication_note": null
+  },
+  {
+    "schema_version": "1.0", "case_id": "example-003", "game_id": "starport-arena", "ruleset_id": "patch-4", "mode_id": "team_match", "media_ref": "media:clip-99", "source_type": "video", "consent_scope": "player_replay_training", "license_ref": "license:internal-demo", "viewpoint_type": "player", "match_id": "match-C", "player_id_hash": "demo-player-C", "t0_ms": 18000, "t1_ms": 22000,
+    "objective_labels": [{"observation_id": "obs-003", "kind": "movement_path", "value": {"path": "left-to-center"}, "evidence_ref": "media:clip-99#18.0-22.0s", "t0_ms": 18000, "t1_ms": 22000, "visibility": "player_visible", "verification": "expert_verified"}],
+    "expert_judgments": [{"judgment_id": "judge-003a", "claim": "移动路线过于暴露", "rationale": "从该视角可见的掩体较少", "observation_ids": ["obs-003"], "rubric_ref": null, "applicability": ["优先求生存"], "exceptions": [], "judgment_status": "disputed", "reviewer_id": "expert-A"}, {"judgment_id": "judge-003b", "claim": "该路线可接受", "rationale": "若当前任务是快速抢占目标，移动速度可能优先", "observation_ids": ["obs-003"], "rubric_ref": null, "applicability": ["优先抢占目标"], "exceptions": [], "judgment_status": "disputed", "reviewer_id": "expert-B"}],
+    "review_status": "reviewed", "reviewers": ["expert-A", "expert-B"], "split": "none", "adjudication_note": "目标信息不足；待领域负责人核对后决定是否入库"
+  }
+]

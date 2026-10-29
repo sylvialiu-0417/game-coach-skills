@@ -1,0 +1,18 @@
+{"id":"PT01","query":"把我的游戏录像转成带时间戳的状态和事件","expected":"trigger"}
+{"id":"PT02","query":"识别第一人称画面里可见的对象和移动","expected":"trigger"}
+{"id":"PT03","query":"从游戏截图 OCR 出装备面板数值","expected":"trigger"}
+{"id":"PT04","query":"用官方游戏事件接口形成教练可用的观察包","expected":"trigger"}
+{"id":"PT05","query":"把队内语音和视频事件对齐，标注可听到的线索","expected":"trigger"}
+{"id":"PT06","query":"评测 3D 游戏视频里的对象追踪和方位识别","expected":"trigger"}
+{"id":"PT07","query":"从赛后录像找出有证据的时间段和事件","expected":"trigger"}
+{"id":"PT08","query":"不同镜头下同一个角色身份是否保持一致","expected":"trigger"}
+{"id":"PT09","query":"根据攻略告诉我下一步怎么打","expected":"skip"}
+{"id":"PT10","query":"把新装备攻略加入知识库并发布","expected":"skip"}
+{"id":"PT11","query":"给玩家写一份完整训练计划","expected":"skip"}
+{"id":"PT12","query":"创造一个游戏 NPC 的性格设定","expected":"skip"}
+{"id":"PT13","query":"帮我玩游戏并自动点击按钮","expected":"skip"}
+{"id":"PT14","query":"推荐一款适合我的新游戏","expected":"skip"}
+{"id":"PT15","query":"解释游戏里为什么要用这套战术","expected":"skip"}
+{"id":"PT16","query":"分析最新版本的配装强度","expected":"skip"}
+{"id":"PT17","query":"看一下这段游戏视频","expected":"boundary"}
+{"id":"PT18","query":"识别这张图","expected":"boundary"}

@@ -1,0 +1,13 @@
+{
+  "adapter_version": "example-1",
+  "game_id": "starport-arena",
+  "game_type": "real_time_team",
+  "ruleset_source": "trusted_game_service",
+  "modes": ["team_match"],
+  "entity_types": ["unit", "objective", "resource"],
+  "observable_state_fields": ["allied_positions", "visible_objective_status", "own_resource", "own_skill_ready"],
+  "hidden_state_fields": ["unseen_opponent_positions"],
+  "knowledge_types": ["rule", "strategy", "counterplay"],
+  "live_tip_enabled": true,
+  "notes": "虚构游戏；策略前提与术语由该适配器及知识条目定义，通用 Skill 不写具体打法。"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "coach_id": "starport-live-advisor",
+    "game_id": "starport-arena",
+    "config_version": "example-1",
+    "tasks": ["explain", "recommend", "live_tip", "feedback"],
+    "surfaces": ["chat", "in_game"],
+    "max_tip_chars": 55,
+    "min_tip_interval_seconds": 45,
+    "tools": ["get_context", "search_knowledge", "get_state", "record_feedback"]
+  },
+  {
+    "coach_id": "far-mountain-reviewer",
+    "game_id": "far-mountain-rpg",
+    "config_version": "example-1",
+    "tasks": ["explain", "recommend", "review", "training_plan", "feedback"],
+    "surfaces": ["chat", "post_game"],
+    "max_tip_chars": null,
+    "min_tip_interval_seconds": null,
+    "tools": ["get_context", "search_knowledge", "get_state", "record_feedback"]
+  }
+]

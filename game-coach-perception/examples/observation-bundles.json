@@ -1,0 +1,17 @@
+[
+  {
+    "schema_version": "1.0", "game_id": "starport-arena", "ruleset_id": "patch-4", "session_id": "demo-01", "viewpoint_id": "player-1", "viewpoint_type": "player", "source_type": "official_api", "captured_at": "2026-10-29T08:00:00Z", "status": "usable",
+    "observations": [{"observation_id": "obs-api-1", "kind": "own_resource", "entity_ref": "player-1", "value": {"amount": 30}, "t0_ms": 12000, "t1_ms": 12000, "epistemic_status": "observed", "visibility": "player_visible", "evidence_refs": [{"source_id": "event-log-1", "modality": "api", "locator": "event:339"}]}],
+    "missing_fields": [], "conflicts": [], "model_version": "none", "adapter_version": "example-1", "consent_scope": "player_session"
+  },
+  {
+    "schema_version": "1.0", "game_id": "far-mountain-rpg", "ruleset_id": "chapter-2", "session_id": "demo-02", "viewpoint_id": "player-1", "viewpoint_type": "player", "source_type": "screenshot", "captured_at": "2026-10-29T08:01:00Z", "status": "partial",
+    "observations": [{"observation_id": "obs-ocr-1", "kind": "visible_item_label", "entity_ref": null, "value": {"text": "防御 +12"}, "t0_ms": 33000, "t1_ms": 33000, "epistemic_status": "observed", "visibility": "player_visible", "evidence_refs": [{"source_id": "frame-204", "modality": "frame", "locator": "bbox:120,40,240,90"}]}],
+    "missing_fields": ["item_hidden_affixes"], "conflicts": [], "model_version": "ocr-example-1", "adapter_version": "example-1", "consent_scope": "player_screenshot"
+  },
+  {
+    "schema_version": "1.0", "game_id": "starport-arena", "ruleset_id": "patch-4", "session_id": "demo-03", "viewpoint_id": "player-1", "viewpoint_type": "player", "source_type": "audio", "captured_at": "2026-10-29T08:02:00Z", "status": "partial",
+    "observations": [{"observation_id": "obs-audio-1", "kind": "audible_cue", "entity_ref": null, "value": {"cue": "footstep", "relative_direction": "left"}, "t0_ms": 45100, "t1_ms": 45700, "epistemic_status": "inferred", "visibility": "player_visible", "evidence_refs": [{"source_id": "audio-1", "modality": "audio", "locator": "45.1s-45.7s"}]}],
+    "missing_fields": ["opponent_identity", "opponent_world_position"], "conflicts": [], "model_version": "audio-example-1", "adapter_version": "example-1", "consent_scope": "player_audio"
+  }
+]

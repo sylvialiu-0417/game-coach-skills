@@ -1,0 +1,13 @@
+{
+  "adapter_version": "example-1",
+  "game_id": "far-mountain-rpg",
+  "game_type": "turn_based_rpg",
+  "ruleset_source": "trusted_game_service",
+  "modes": ["story", "challenge"],
+  "entity_types": ["character", "enemy", "ability", "encounter"],
+  "observable_state_fields": ["party_build", "battle_log", "encounter_id"],
+  "hidden_state_fields": ["unrevealed_story_flags"],
+  "knowledge_types": ["rule", "build", "encounter_mechanic"],
+  "live_tip_enabled": false,
+  "notes": "虚构游戏；没有实时提示，依然可使用相同的知识问答和复盘流程。"
+}

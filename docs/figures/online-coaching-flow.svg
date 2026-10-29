@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="890" viewBox="0 0 1800 890">
+<rect width="100%" height="100%" fill="white"/>
+<text x="900" y="77.48" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="48" fill="#182B42">线上教练调用流程</text>
+<rect x="40" y="170" width="360" height="170" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="220.0" y="238.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">获授权输入</text>
+<text x="220.0" y="289.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">状态 API / 画面 / 音频</text>
+<rect x="500" y="170" width="360" height="170" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="680.0" y="238.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">观察提取 Skill</text>
+<text x="680.0" y="289.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">状态与事件 + 证据定位</text>
+<rect x="960" y="170" width="360" height="170" rx="18" fill="#F1F5F9" stroke="#61788E" stroke-width="3"/>
+<text x="1140.0" y="238.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">观察条件核验</text>
+<text x="1140.0" y="289.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">授权 / 可见性 / 时效</text>
+<rect x="1420" y="170" width="360" height="170" rx="18" fill="#EAF2F8" stroke="#61788E" stroke-width="3"/>
+<text x="1600.0" y="238.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">知识教练 Skill</text>
+<text x="1600.0" y="289.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">当前知识 + 已发布判据</text>
+<polyline points="400,255 500,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="500,255 482.7296507561772,262.92054524615503 482.7296507561772,247.079454753845" fill="#486A87"/>
+<polyline points="860,255 960,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="960,255 942.7296507561772,262.92054524615503 942.7296507561772,247.079454753845" fill="#486A87"/>
+<polyline points="1320,255 1420,255" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1420,255 1402.729650756177,262.92054524615503 1402.729650756177,247.079454753845" fill="#486A87"/>
+<text x="1370" y="212.54" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="29" fill="#486A87">满足</text>
+<rect x="960" y="505" width="360" height="170" rx="18" fill="#FFF6E9" stroke="#AD8A52" stroke-width="3"/>
+<text x="1140.0" y="573.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">澄清 / 请求补充</text>
+<text x="1140.0" y="624.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">主动场景静默</text>
+<polyline points="1140,340 1140,505" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1140,505 1132.079454753845,487.7296507561772 1147.920545246155,487.7296507561772" fill="#486A87"/>
+<text x="1300" y="427.54" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="29" fill="#486A87">缺失或不确定</text>
+<rect x="1420" y="505" width="360" height="170" rx="18" fill="#EAF5EF" stroke="#5E8972" stroke-width="3"/>
+<text x="1600.0" y="573.68" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">回答 / 局内提示</text>
+<text x="1600.0" y="624.0" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">复盘 / 训练计划</text>
+<polyline points="1600,340 1600,505" fill="none" stroke="#486A87" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1600,505 1592.079454753845,487.7296507561772 1607.920545246155,487.7296507561772" fill="#486A87"/>
+<text x="900" y="783.84" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="34" fill="#182B42">记录证据、缺失条件与版本链 → 失败样本进入专家标注和知识维护</text>
+<text x="900" y="842.8" text-anchor="middle" font-family="Arial Unicode MS,Microsoft YaHei,sans-serif" font-size="30" fill="#526577">宿主服务校验权限、实时展示条件与知识发布状态</text>
+</svg>

@@ -1,0 +1,12 @@
+{"id":"A01","setup":"机器预标注有时间点但原视频无法复现","expected":"reject_or_unknown","focus":"预标注不等于参考标签"}
+{"id":"A02","setup":"玩家第一视角看不到敌人，观战视角能看到","expected":"keep_viewpoints_separate","focus":"可见性"}
+{"id":"A03","setup":"专家用未获授权的队内语音解释判断","expected":"exclude_private_evidence","focus":"授权范围"}
+{"id":"A04","setup":"同一事件在相邻两段视频各出现一次","expected":"deduplicate","focus":"全局时间"}
+{"id":"A05","setup":"截图只给装备词条，没有角色构筑","expected":"insufficient_evidence","focus":"事实与判断分离"}
+{"id":"A06","setup":"两位专家对同一走位判断不同但目标也不同","expected":"retain_disagreement","focus":"适用条件"}
+{"id":"A07","setup":"已批准判据引用过期游戏版本","expected":"re_review","focus":"版本失效"}
+{"id":"A08","setup":"同一玩家同一对局相邻片段分别落入训练和测试","expected":"block_leakage","focus":"数据集隔离"}
+{"id":"A09","setup":"测试集被用来调 Prompt","expected":"invalidate_test","focus":"评测污染"}
+{"id":"A10","setup":"职业选手动作与普通玩家目标不同","expected":"conditional_rubric","focus":"专业经验适用范围"}
+{"id":"A11","setup":"事实标签已核对但专家判断仍在争议","expected":"perception_only","focus":"分流产物"}
+{"id":"A12","setup":"标注状态 approved，要求自动发布到线上知识库","expected":"block_publish","focus":"标注审定不等于发布"}

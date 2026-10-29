@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game Coach Expert Annotation Case",
+  "type": "object",
+  "required": ["schema_version", "case_id", "game_id", "ruleset_id", "mode_id", "media_ref", "source_type", "consent_scope", "license_ref", "viewpoint_type", "match_id", "player_id_hash", "t0_ms", "t1_ms", "objective_labels", "expert_judgments", "review_status", "reviewers", "split"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "game_id": {"type": "string", "minLength": 1},
+    "ruleset_id": {"type": "string", "minLength": 1},
+    "mode_id": {"type": "string", "minLength": 1},
+    "media_ref": {"type": "string", "minLength": 1},
+    "source_type": {"enum": ["video", "screenshot", "event_replay", "mixed"]},
+    "consent_scope": {"type": "string", "minLength": 1},
+    "license_ref": {"type": "string", "minLength": 1},
+    "viewpoint_type": {"enum": ["player", "spectator", "replay"]},
+    "match_id": {"type": "string", "minLength": 1},
+    "player_id_hash": {"type": "string", "minLength": 1},
+    "t0_ms": {"type": "integer", "minimum": 0},
+    "t1_ms": {"type": "integer", "minimum": 0},
+    "objective_labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["observation_id", "kind", "value", "evidence_ref", "t0_ms", "t1_ms", "visibility", "verification"],
+        "properties": {
+          "observation_id": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "minLength": 1},
+          "value": {"type": "object"},
+          "evidence_ref": {"type": "string", "minLength": 1},
+          "t0_ms": {"type": "integer", "minimum": 0},
+          "t1_ms": {"type": "integer", "minimum": 0},
+          "visibility": {"enum": ["player_visible", "spectator_only", "unknown"]},
+          "verification": {"enum": ["machine_draft", "expert_verified", "unknown"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "expert_judgments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["judgment_id", "claim", "rationale", "observation_ids", "rubric_ref", "applicability", "exceptions", "judgment_status", "reviewer_id"],
+        "properties": {
+          "judgment_id": {"type": "string", "minLength": 1},
+          "claim": {"type": "string"},
+          "rationale": {"type": "string"},
+          "observation_ids": {"type": "array", "items": {"type": "string"}},
+          "rubric_ref": {"type": ["string", "null"]},
+          "applicability": {"type": "array", "items": {"type": "string"}},
+          "exceptions": {"type": "array", "items": {"type": "string"}},
+          "judgment_status": {"enum": ["supported", "conditional", "insufficient_evidence", "disputed"]},
+          "reviewer_id": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "review_status": {"enum": ["draft", "reviewed", "adjudicated", "approved", "retired"]},
+    "reviewers": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "split": {"enum": ["train", "dev", "test", "none"]},
+    "adjudication_note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

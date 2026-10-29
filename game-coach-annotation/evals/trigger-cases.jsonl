@@ -1,0 +1,20 @@
+{"id":"AT01","query":"组织专家给游戏录像做事实和战术判断双层标注","expected":"trigger"}
+{"id":"AT02","query":"核对 AI 从对局视频预标出的击杀事件","expected":"trigger"}
+{"id":"AT03","query":"把职业教练的复盘讲解整理成可审定判据","expected":"trigger"}
+{"id":"AT04","query":"处理两位专家对同一片段判断不一致","expected":"trigger"}
+{"id":"AT05","query":"制作 AI 教练的训练集和独立评测集","expected":"trigger"}
+{"id":"AT06","query":"游戏版本更新后重审旧录像标注","expected":"trigger"}
+{"id":"AT07","query":"检查相邻视频切片有没有重复标事件","expected":"trigger"}
+{"id":"AT08","query":"给专家做录像标注操作规范和质检","expected":"trigger"}
+{"id":"AT09","query":"现在局内应该怎么开团","expected":"skip"}
+{"id":"AT10","query":"把截图中的装备数值 OCR 出来","expected":"skip"}
+{"id":"AT11","query":"直接发布这条新攻略到生产知识库","expected":"skip"}
+{"id":"AT12","query":"训练一个全新的视觉模型并部署","expected":"skip"}
+{"id":"AT13","query":"给我推荐几款游戏","expected":"skip"}
+{"id":"AT14","query":"创作游戏 NPC 的对白","expected":"skip"}
+{"id":"AT15","query":"查一下当前游戏版本的装备价格","expected":"skip"}
+{"id":"AT16","query":"把这份报告转成 PDF","expected":"skip"}
+{"id":"AT17","query":"看看这段游戏录像有什么问题","expected":"boundary"}
+{"id":"AT18","query":"把玩家反馈加入知识库","expected":"boundary"}
+{"id":"AT19","query":"评估这条教练建议是否准确","expected":"boundary"}
+{"id":"AT20","query":"整理战队的训练资料","expected":"boundary"}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game coach response",
+  "type": "object",
+  "required": ["game_id", "coach_id", "decision", "player_text", "evidence_ids", "missing_conditions", "reason_code", "versions", "trace_id"],
+  "properties": {
+    "game_id": {"type": "string", "minLength": 1},
+    "coach_id": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["answer", "conditional", "clarify", "abstain", "silent"]},
+    "player_text": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "missing_conditions": {"type": "array", "items": {"type": "string"}},
+    "reason_code": {"type": "string"},
+    "versions": {
+      "type": "object",
+      "required": ["skill", "kb_snapshot", "adapter", "coach_config", "model"],
+      "properties": {
+        "skill": {"type": "string"}, "kb_snapshot": {"type": "string"},
+        "adapter": {"type": "string"}, "coach_config": {"type": "string"},
+        "model": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "trace_id": {"type": "string"},
+    "display_ttl_ms": {"type": "integer", "minimum": 0},
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "scope", "observation_ids", "rubric_ids"],
+        "properties": {
+          "claim": {"type": "string"},
+          "scope": {"enum": ["event", "match", "multi_match"]},
+          "observation_ids": {"type": "array", "items": {"type": "string"}},
+          "rubric_ids": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
