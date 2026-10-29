@@ -13,13 +13,13 @@
 | [game-coach-annotation](game-coach-annotation/SKILL.md) | 如何把事实标签与专家判断分开审定，制作训练、知识候选及评测资产 |
 | [Word 调研与方案报告](docs/game-coach-skills-report.docx) | 公开产品调研、设计边界、专家生产流程与评测方法 |
 
-## 线上教练如何使用知识
+## AI教练如何使用知识
 
 ![线上教练调用流程](docs/figures/online-coaching-flow.png)
 
 `game-coach-perception` 输出的是观察；`game-coach-kb` 还要结合已发布知识和专业判据验证建议是否适用。缺少关键状态时，系统澄清、给条件式建议或停止主动提示。每个游戏使用自己的实体、模式、状态字段与判据，核心流程不依赖王者荣耀术语。
 
-## 专家怎样补强教练
+## 专家怎样补强AI教练
 
 ![专家复盘标注与数据分流](docs/figures/expert-annotation-flow.png)
 
