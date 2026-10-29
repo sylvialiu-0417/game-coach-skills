@@ -1,0 +1,23 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "clarify",
+  "player_text": "目前信息不足，无法可靠判断两人的下一脚落点。请描述关卡或机关、两人各自站在哪里，以及机关当前状态（例如哪些踏板亮着、平台是否移动）。",
+  "evidence_ids": [
+    "K-COOP"
+  ],
+  "missing_conditions": [
+    "level_or_mechanism",
+    "player_positions",
+    "mechanism_state"
+  ],
+  "reason_code": "missing_precise_instruction_context",
+  "versions": {
+    "skill": "not_loaded",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B04"
+}

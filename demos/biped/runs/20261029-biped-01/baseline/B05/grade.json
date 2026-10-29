@@ -1,0 +1,9 @@
+{
+  "case_id": "B05",
+  "passed": false,
+  "issues": [
+    "reason_code"
+  ],
+  "decision": "silent",
+  "reason_code": "proactive_live_tip_disabled_and_no_consent"
+}

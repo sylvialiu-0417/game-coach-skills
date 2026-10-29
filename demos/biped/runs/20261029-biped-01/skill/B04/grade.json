@@ -1,0 +1,7 @@
+{
+  "case_id": "B04",
+  "passed": true,
+  "issues": [],
+  "decision": "clarify",
+  "reason_code": "state_missing"
+}

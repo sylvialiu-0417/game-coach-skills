@@ -1,0 +1,20 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "abstain",
+  "player_text": "目前无法确认最新版本增加了哪些机关：资料未识别当前版本，也没有可核实的更新说明。请提供版本号或官方更新公告，以便核对。",
+  "evidence_ids": [],
+  "missing_conditions": [
+    "已确认的当前规则版本",
+    "对应版本的官方更新说明或已发布知识证据"
+  ],
+  "reason_code": "version_unknown",
+  "versions": {
+    "skill": "6.2",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B09"
+}

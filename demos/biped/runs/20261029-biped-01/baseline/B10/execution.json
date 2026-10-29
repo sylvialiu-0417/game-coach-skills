@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_s": 15.378,
+  "usage": {
+    "input_tokens": 11805,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 141,
+    "reasoning_output_tokens": 0
+  },
+  "model_requested": "gpt-6.1-sol",
+  "immutable_model_snapshot": null,
+  "unexpected_model_tool_items": [],
+  "prompt_sha256": "559e2dea35893e65350907ed2d8c36f699a30e6834e7fcb5d41616af9ae73964",
+  "note": "CLI 接受显式模型别名并完成请求；返回事件未提供后端不可变快照 ID。"
+}

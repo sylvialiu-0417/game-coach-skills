@@ -1,0 +1,19 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "answer",
+  "player_text": "一个人也能玩，不必凑齐两个人。Biped 支持单人游玩和双人合作；公开介绍强调双人配合，但并不代表必须两人才能玩。",
+  "evidence_ids": [
+    "K-MODES"
+  ],
+  "missing_conditions": [],
+  "reason_code": "supported_by_evidence",
+  "versions": {
+    "skill": "6.2",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B02"
+}

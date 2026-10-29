@@ -1,0 +1,23 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "silent",
+  "player_text": "",
+  "evidence_ids": [],
+  "missing_conditions": [
+    "live_tip_enabled",
+    "enabled_tasks.live_tip",
+    "level_or_mechanism",
+    "player_positions",
+    "mechanism_state"
+  ],
+  "reason_code": "unsupported_capability",
+  "versions": {
+    "skill": "6.2",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B05"
+}

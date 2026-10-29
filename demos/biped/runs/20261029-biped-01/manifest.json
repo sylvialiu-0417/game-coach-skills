@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-29T05:10:15.654716+00:00",
+  "harness_version": "biped-rag-harness-1.0",
+  "cli_version": "codex-cli 0.163.0-alpha.10.2",
+  "model_requested": "gpt-6.1-sol",
+  "model_backend_snapshot": "not exposed by CLI events",
+  "auth": "local ChatGPT login; credentials never copied",
+  "reasoning_effort": "low",
+  "arms": [
+    "baseline",
+    "skill"
+  ],
+  "runs_per_case_per_arm": 1,
+  "case_order": "fixed; baseline then skill for each case",
+  "retrieval": "host keyword search, prefilter by game/ruleset/mode/status/snapshot, top_k=3",
+  "skill_loading": "explicit text injection of SKILL.md + runtime.md + contracts.md only in skill arm",
+  "tools": "host get_context + search_knowledge; model-side shell/web/apps/plugins/multi_agent/hooks disabled",
+  "sandbox": "read-only in temporary empty working directory",
+  "command_template": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --json --model MODEL --disable apps --disable plugins --disable multi_agent --disable shell_tool --disable hooks -c web_search=\"disabled\" -c model_reasoning_effort=\"low\" --output-schema SCHEMA -",
+  "frozen_sha256": {
+    "demos/biped/run.py": "c67740422e516d769258c4df8cd27bea063235b5688d6ed818f0d97efa04b284",
+    "demos/biped/data/cases.json": "40f41b47efb9f732799c7a17ceb8dddf671052d0839743448419d55533fa5faa",
+    "demos/biped/data/rubric.json": "aba023c40643db07ee094e960d8dcfad9999085508128e8005ca3b6aa8797f68",
+    "demos/biped/data/adapter.json": "769c5a0d02de3826843c01e6379e2dabb0c31d69c5995d6c69afd18b2ea8c544",
+    "demos/biped/data/knowledge.json": "be60264a82e61d8a38721303f96018cba7ce542b1fb0af91779c21a9e9fcea75",
+    "demos/biped/data/sources.json": "3bc06ad721454b40b207c0f7c1f9bdabc7fe470f95b6c7c17cf49f34659a6855",
+    "game-coach-kb/SKILL.md": "05d6112fe313768188601d1a61b39b7cda307fd3612f0537c82fce044ade478f",
+    "game-coach-kb/references/runtime.md": "2c742754e202616319205b2b7a4711bd604e9d4b154eb489938ae17b6e94127a",
+    "game-coach-kb/references/contracts.md": "e74c7af08f7bce6929262100564f78e927db17c3a6b191d4466b85cd90f3f4ef"
+  },
+  "completed_at": "2026-10-29T05:17:42.209494+00:00"
+}

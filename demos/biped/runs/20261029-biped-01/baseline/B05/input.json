@@ -1,0 +1,125 @@
+{
+  "trusted_host_context": {
+    "game_id": "biped",
+    "ruleset_id": "biped-steam-public-docs",
+    "mode_id": "public_rules",
+    "coach_id": "biped-beginner-coach",
+    "enabled_tasks": [
+      "explain",
+      "recommend"
+    ],
+    "live_tip_enabled": false,
+    "consent": false,
+    "state": {
+      "source": "none",
+      "values": {},
+      "observed_at": null
+    },
+    "precise_instruction_requires": [
+      "level_or_mechanism",
+      "player_positions",
+      "mechanism_state"
+    ],
+    "scope": "仅验证公开知识问答、一般合作练习建议和缺信息回退；未连接游戏、画面、键鼠控制或对局记录",
+    "ruleset_meaning": "Steam PC 第一部的公开说明适用范围；不是游戏补丁号，也不代表已识别用户当前安装版本",
+    "versions": {
+      "skill": "not_loaded",
+      "kb_snapshot": "seed-v1",
+      "adapter": "biped-demo-1.0",
+      "coach_config": "beginner-1.0",
+      "model": "gpt-6.1-sol"
+    }
+  },
+  "request": {
+    "request_id": "B05",
+    "task": "live_tip",
+    "surface": "proactive",
+    "user_text": "机关卡住了，立即告诉两个人该踩哪里。",
+    "trigger_event": "manual_fixture_not_game_event"
+  },
+  "retrieval_result": {
+    "error": null,
+    "evidence": [
+      {
+        "evidence_id": "K-MODES",
+        "game_id": "biped",
+        "ruleset_scope": "biped-steam-public-docs",
+        "mode_scope": [
+          "public_rules"
+        ],
+        "status": "published",
+        "content": "游戏支持单人游玩和双人合作。公开介绍强调双人配合，但不能据此说必须两人才能玩。",
+        "source_ref": "S-STEAM",
+        "source_tier": "official",
+        "locator": "双人合作，默契度大作战",
+        "applicability": [
+          "模式是否存在；不推断各平台的联机兼容性"
+        ],
+        "valid_from": "2026-10-29",
+        "valid_to": null,
+        "retrieved_at": "2026-10-29T05:13:01.462256+00:00",
+        "lexical_score": 3,
+        "matched_keywords": [
+          "两个人"
+        ]
+      },
+      {
+        "evidence_id": "K-COOP",
+        "game_id": "biped",
+        "ruleset_scope": "biped-steam-public-docs",
+        "mode_scope": [
+          "public_rules"
+        ],
+        "status": "published",
+        "content": "合作挑战可能要求同步节奏或不同分工。开发者指出，玩家需要沟通、商量计划并协同行动。可以由此提出先商量分工和口令、再一起尝试的一般练习建议；这是教练建议，不是某关卡唯一解或已观察到的失误诊断。",
+        "source_ref": "S-DESIGNER",
+        "source_tier": "reviewed",
+        "locator": "1. About biped；与 Steam 双人合作介绍相互印证",
+        "applicability": [
+          "仅一般合作建议",
+          "精确落脚点需关卡、玩家位置和机关状态"
+        ],
+        "valid_from": "2026-10-29",
+        "valid_to": null,
+        "retrieved_at": "2026-10-29T05:13:01.462280+00:00",
+        "lexical_score": 2,
+        "matched_keywords": [
+          "机关"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "S-NEXT",
+      "title": "NExT Studios 官方介绍",
+      "url": "https://www.nextstudios.com/next/index_en.html",
+      "publisher": "NExT Studios",
+      "source_tier": "official",
+      "checked_on": "2026-10-29",
+      "locator": "NExT Studios / titles",
+      "note": "说明工作室属于 Tencent Games，并列出 Biped；用于选题归属核实，不用作具体攻略证据。"
+    },
+    {
+      "source_id": "S-STEAM",
+      "title": "Biped Steam 产品页（开发商提供的游戏介绍）",
+      "url": "https://store.steampowered.com/app/1071870/Biped/?l=schinese",
+      "publisher": "NExT Studios / META Publishing via Steam",
+      "source_tier": "official",
+      "checked_on": "2026-10-29",
+      "locator": "关于此游戏；系统需求的附注事项",
+      "note": "只摘录并转述必要机制，不收录价格、评分或完整页面；没有核实游戏二进制 build。"
+    },
+    {
+      "source_id": "S-DESIGNER",
+      "title": "Postmortem: A Rationally Designed Funny Game — The making of Biped, in hindsight",
+      "url": "https://www.gamedeveloper.com/design/postmortem-a-rationally-designed-funny-game---the-making-of-biped-in-hindsight",
+      "publisher": "Game Developer，开发者署名 ding dong",
+      "source_tier": "reviewed",
+      "published_on": "2020-03-27",
+      "checked_on": "2026-10-29",
+      "locator": "1. About biped",
+      "note": "开发者第一手设计复盘。这里只采用与官方介绍相互印证的沟通、制定计划、协同行动原则，不把开发过程原型当作当前关卡规则。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "adapter_version": "biped-demo-1.0",
+  "game_id": "biped",
+  "display_name": "只只大冒险 / Biped（第一部）",
+  "ruleset_id": "biped-steam-public-docs",
+  "ruleset_meaning": "Steam PC 第一部的公开说明适用范围；不是游戏补丁号，也不代表已识别用户当前安装版本",
+  "mode_id": "public_rules",
+  "coach_id": "biped-beginner-coach",
+  "coach_config_version": "beginner-1.0",
+  "enabled_tasks": ["explain", "recommend"],
+  "live_tip_enabled": false,
+  "state_source": "none",
+  "state_fields_for_precise_instruction": ["level_or_mechanism", "player_positions", "mechanism_state"],
+  "scope": "仅验证公开知识问答、一般合作练习建议和缺信息回退；未连接游戏、画面、键鼠控制或对局记录",
+  "aliases": {"手柄": ["摇杆", "控制器"], "单人": ["一个人"], "本地": ["同屏", "同一台"], "合作": ["配合", "队友", "两个人"]}
+}

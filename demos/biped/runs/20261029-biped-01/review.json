@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex assistant; not an independent domain expert",
+  "kind": "post_run_source_comparison",
+  "reviewed_outputs": 22,
+  "changes_to_saved_model_outputs": false,
+  "findings": [
+    "本次助手逐条对照知识卡和已核对来源，未发现样本回答中的明显证据冲突；这不是独立专家事实准确率。",
+    "基线五条只因标准原因码词表不同而未通过；动作与回退文本仍合理。",
+    "B09 与 B10 中基线选择 clarify、Skill 选择 abstain，两组均承认信息不足，不能把这两项直接解释为安全失败。",
+    "两组都在补录前拒绝确定设备组合，并在补录后引用 K-LOCAL-INPUT 回答；更新收益不属于 Skill 单独贡献。",
+    "本轮没有证明 Skill 带来事实正确性或玩家效用提升；已展示显式加载、契约规范化与知识更新流程。"
+  ]
+}

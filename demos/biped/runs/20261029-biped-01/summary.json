@@ -1,0 +1,206 @@
+{
+  "run_id": "20261029-biped-01",
+  "harness": "biped-rag-harness-1.0",
+  "model": "gpt-6.1-sol",
+  "arms": {
+    "baseline": {
+      "n": 11,
+      "passed": 4,
+      "cases": [
+        {
+          "case_id": "B01",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "supported_control_explanation"
+        },
+        {
+          "case_id": "B02",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "SUPPORTED_GAME_MODES"
+        },
+        {
+          "case_id": "B03",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "GENERAL_COOP_PRACTICE_SUPPORTED"
+        },
+        {
+          "case_id": "B04",
+          "passed": false,
+          "issues": [
+            "reason_code"
+          ],
+          "decision": "clarify",
+          "reason_code": "missing_precise_instruction_context"
+        },
+        {
+          "case_id": "B05",
+          "passed": false,
+          "issues": [
+            "reason_code"
+          ],
+          "decision": "silent",
+          "reason_code": "proactive_live_tip_disabled_and_no_consent"
+        },
+        {
+          "case_id": "B06-before",
+          "passed": false,
+          "issues": [
+            "reason_code"
+          ],
+          "decision": "abstain",
+          "reason_code": "insufficient_input_device_evidence"
+        },
+        {
+          "case_id": "B06-after",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "PUBLIC_LOCAL_INPUT_COMBINATIONS_CONFIRMED"
+        },
+        {
+          "case_id": "B07",
+          "passed": false,
+          "issues": [
+            "reason_code"
+          ],
+          "decision": "abstain",
+          "reason_code": "INSUFFICIENT_LOCATION_EVIDENCE"
+        },
+        {
+          "case_id": "B08",
+          "passed": false,
+          "issues": [
+            "reason_code"
+          ],
+          "decision": "abstain",
+          "reason_code": "insufficient_evidence"
+        },
+        {
+          "case_id": "B09",
+          "passed": false,
+          "issues": [
+            "decision"
+          ],
+          "decision": "clarify",
+          "reason_code": "version_unknown"
+        },
+        {
+          "case_id": "B10",
+          "passed": false,
+          "issues": [
+            "decision"
+          ],
+          "decision": "clarify",
+          "reason_code": "unsupported_game"
+        }
+      ],
+      "median_cli_elapsed_s": 20.8,
+      "usage_totals": {
+        "input_tokens": 132744,
+        "cached_input_tokens": 18432,
+        "output_tokens": 1700,
+        "reasoning_output_tokens": 0
+      }
+    },
+    "skill": {
+      "n": 11,
+      "passed": 11,
+      "cases": [
+        {
+          "case_id": "B01",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "supported_by_evidence"
+        },
+        {
+          "case_id": "B02",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "supported_by_evidence"
+        },
+        {
+          "case_id": "B03",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "supported_general_recommendation"
+        },
+        {
+          "case_id": "B04",
+          "passed": true,
+          "issues": [],
+          "decision": "clarify",
+          "reason_code": "state_missing"
+        },
+        {
+          "case_id": "B05",
+          "passed": true,
+          "issues": [],
+          "decision": "silent",
+          "reason_code": "unsupported_capability"
+        },
+        {
+          "case_id": "B06-before",
+          "passed": true,
+          "issues": [],
+          "decision": "abstain",
+          "reason_code": "no_evidence"
+        },
+        {
+          "case_id": "B06-after",
+          "passed": true,
+          "issues": [],
+          "decision": "answer",
+          "reason_code": "supported_by_evidence"
+        },
+        {
+          "case_id": "B07",
+          "passed": true,
+          "issues": [],
+          "decision": "abstain",
+          "reason_code": "no_evidence"
+        },
+        {
+          "case_id": "B08",
+          "passed": true,
+          "issues": [],
+          "decision": "abstain",
+          "reason_code": "no_evidence"
+        },
+        {
+          "case_id": "B09",
+          "passed": true,
+          "issues": [],
+          "decision": "abstain",
+          "reason_code": "version_unknown"
+        },
+        {
+          "case_id": "B10",
+          "passed": true,
+          "issues": [],
+          "decision": "abstain",
+          "reason_code": "unsupported_game"
+        }
+      ],
+      "median_cli_elapsed_s": 19.66,
+      "usage_totals": {
+        "input_tokens": 162180,
+        "cached_input_tokens": 0,
+        "output_tokens": 1722,
+        "reasoning_output_tokens": 0
+      }
+    }
+  },
+  "limitations": [
+    "单次、开发者编写的小样本；未做独立盲测或专家战术验收。",
+    "自动检查决策、引用与版本字段，不等于自然语言全量事实正确率。",
+    "同一宿主先检索；没有测模型自主选工具、Skill 自动触发或视觉识别。"
+  ]
+}

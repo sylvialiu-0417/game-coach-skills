@@ -1,0 +1,19 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "answer",
+  "player_text": "Steam PC 本地双人的官方说明列出两种输入组合：\n- 一个手柄 + 一个鼠标\n- 两个手柄\n\n只用两个鼠标不在列出的支持组合内，因此不能保证可行。建议按上述组合准备设备；该说明不涵盖自定义输入映射。",
+  "evidence_ids": [
+    "K-LOCAL-INPUT"
+  ],
+  "missing_conditions": [],
+  "reason_code": "supported_by_evidence",
+  "versions": {
+    "skill": "6.2",
+    "kb_snapshot": "enriched-v2",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B06-after"
+}

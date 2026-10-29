@@ -1,0 +1,7 @@
+{
+  "case_id": "B05",
+  "passed": true,
+  "issues": [],
+  "decision": "silent",
+  "reason_code": "unsupported_capability"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "actor": "host",
+    "tool": "get_context",
+    "result": {
+      "game_id": "biped",
+      "ruleset_id": "biped-steam-public-docs",
+      "mode_id": "public_rules",
+      "coach_id": "biped-beginner-coach",
+      "enabled_tasks": [
+        "explain",
+        "recommend"
+      ],
+      "live_tip_enabled": false,
+      "consent": false,
+      "state": {
+        "source": "none",
+        "values": {},
+        "observed_at": null
+      },
+      "precise_instruction_requires": [
+        "level_or_mechanism",
+        "player_positions",
+        "mechanism_state"
+      ],
+      "scope": "仅验证公开知识问答、一般合作练习建议和缺信息回退；未连接游戏、画面、键鼠控制或对局记录",
+      "ruleset_meaning": "Steam PC 第一部的公开说明适用范围；不是游戏补丁号，也不代表已识别用户当前安装版本",
+      "versions": {
+        "skill": "not_loaded",
+        "kb_snapshot": "seed-v1",
+        "adapter": "biped-demo-1.0",
+        "coach_config": "beginner-1.0",
+        "model": "gpt-6.1-sol"
+      }
+    }
+  },
+  {
+    "actor": "host",
+    "tool": "search_knowledge",
+    "arguments": {
+      "game_id": "biped",
+      "ruleset_id": "biped-steam-public-docs",
+      "mode_id": "public_rules",
+      "snapshot": "seed-v1",
+      "status": "published",
+      "query": "第三关第七枚金币的精确坐标是什么？不要给猜测。",
+      "top_k": 3
+    },
+    "result": {
+      "error": null,
+      "evidence_ids": [],
+      "filtered_out": [
+        {
+          "evidence_id": "K-LOCAL-INPUT",
+          "reason": "outside_snapshot"
+        },
+        {
+          "evidence_id": "FIXTURE-DRAFT",
+          "reason": "not_published"
+        },
+        {
+          "evidence_id": "FIXTURE-OTHER-GAME",
+          "reason": "different_game"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "clarify",
+  "player_text": "现有资料未确认最新版本及其新增机关。你指的是哪个平台、哪个版本？请提供版本号或更新公告内容，我再帮你解读。",
+  "evidence_ids": [],
+  "missing_conditions": [
+    "platform",
+    "version_number_or_update_notes"
+  ],
+  "reason_code": "version_unknown",
+  "versions": {
+    "skill": "not_loaded",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B09"
+}

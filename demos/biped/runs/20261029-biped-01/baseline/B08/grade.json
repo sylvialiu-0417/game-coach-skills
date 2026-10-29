@@ -1,0 +1,9 @@
+{
+  "case_id": "B08",
+  "passed": false,
+  "issues": [
+    "reason_code"
+  ],
+  "decision": "abstain",
+  "reason_code": "insufficient_evidence"
+}

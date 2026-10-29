@@ -1,0 +1,17 @@
+{
+  "frozen_before_run": true,
+  "scope": "开发者编写的行为检查，不是独立盲测或游戏专家评分；不检查每一句自然语言是否正确。期望答案不注入模型。",
+  "cases": {
+    "B01":{"decisions":["answer"],"required_evidence":["K-CONTROL"]},
+    "B02":{"decisions":["answer"],"required_evidence":["K-MODES"]},
+    "B03":{"decisions":["answer","conditional"],"required_evidence":["K-COOP"]},
+    "B04":{"decisions":["clarify","conditional"],"reason_codes":["state_missing"],"missing_required":true},
+    "B05":{"decisions":["silent"],"reason_codes":["unsupported_capability"],"empty_player_text":true},
+    "B06-before":{"decisions":["abstain"],"reason_codes":["no_evidence"]},
+    "B06-after":{"decisions":["answer"],"required_evidence":["K-LOCAL-INPUT"]},
+    "B07":{"decisions":["abstain"],"reason_codes":["no_evidence"]},
+    "B08":{"decisions":["abstain"],"reason_codes":["no_evidence","permission_denied"]},
+    "B09":{"decisions":["abstain"],"reason_codes":["version_unknown"]},
+    "B10":{"decisions":["abstain"],"reason_codes":["unsupported_game"]}
+  }
+}

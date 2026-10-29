@@ -1,0 +1,9 @@
+{
+  "case_id": "B06-before",
+  "passed": false,
+  "issues": [
+    "reason_code"
+  ],
+  "decision": "abstain",
+  "reason_code": "insufficient_input_device_evidence"
+}

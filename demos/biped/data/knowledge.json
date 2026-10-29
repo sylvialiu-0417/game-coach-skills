@@ -1,0 +1,47 @@
+{
+  "snapshots": {
+    "seed-v1": ["K-CONTROL", "K-MODES", "K-COOP", "K-WORKSHOP"],
+    "enriched-v2": ["K-CONTROL", "K-MODES", "K-COOP", "K-WORKSHOP", "K-LOCAL-INPUT"]
+  },
+  "records": [
+    {
+      "evidence_id": "K-CONTROL", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "手柄的两个摇杆分别控制机器人的两条腿，腿部操作可组合成移动和交互；官方推荐用手柄游玩。",
+      "source_ref": "S-DESIGNER", "source_tier": "reviewed", "locator": "1. About biped；与 Steam 两摇杆操作介绍相互印证",
+      "keywords": ["控制", "操作", "摇杆", "手柄", "腿", "走路", "移动"], "applicability": ["一般操作原理；不含具体键位映射"], "valid_from": "2026-10-29", "valid_to": null
+    },
+    {
+      "evidence_id": "K-MODES", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "游戏支持单人游玩和双人合作。公开介绍强调双人配合，但不能据此说必须两人才能玩。",
+      "source_ref": "S-STEAM", "source_tier": "official", "locator": "双人合作，默契度大作战",
+      "keywords": ["单人", "一个人", "两个人", "必须", "模式", "双人"], "applicability": ["模式是否存在；不推断各平台的联机兼容性"], "valid_from": "2026-10-29", "valid_to": null
+    },
+    {
+      "evidence_id": "K-COOP", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "合作挑战可能要求同步节奏或不同分工。开发者指出，玩家需要沟通、商量计划并协同行动。可以由此提出先商量分工和口令、再一起尝试的一般练习建议；这是教练建议，不是某关卡唯一解或已观察到的失误诊断。",
+      "source_ref": "S-DESIGNER", "source_tier": "reviewed", "locator": "1. About biped；与 Steam 双人合作介绍相互印证",
+      "keywords": ["合作", "配合", "失误", "沟通", "练", "队友", "机关", "同步", "节奏"], "applicability": ["仅一般合作建议", "精确落脚点需关卡、玩家位置和机关状态"], "valid_from": "2026-10-29", "valid_to": null
+    },
+    {
+      "evidence_id": "K-WORKSHOP", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "Steam 产品介绍提供创意工坊自建、分享和游玩社区关卡的入口；不代表本库已收录社区关卡的解法。",
+      "source_ref": "S-STEAM", "source_tier": "official", "locator": "创造你自己的冒险",
+      "keywords": ["自建", "创意工坊", "社区", "关卡编辑", "分享"], "applicability": ["仅 Steam 公开功能说明"], "valid_from": "2026-10-29", "valid_to": null
+    },
+    {
+      "evidence_id": "K-LOCAL-INPUT", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "Steam PC 的系统需求附注写明：本地双人可用一个手柄加一个鼠标，或两个手柄。因此只用两个鼠标不在该页面列出的支持组合内；不能保证它可行。",
+      "source_ref": "S-STEAM", "source_tier": "official", "locator": "系统需求 → 附注事项（本地双人输入设备）",
+      "keywords": ["本地", "同一台", "鼠标", "手柄", "设备", "组合", "两个鼠标"], "applicability": ["仅 Steam PC 本地双人公开说明", "不外推其他平台或自定义输入映射"], "valid_from": "2026-10-29", "valid_to": null
+    },
+    {
+      "evidence_id": "FIXTURE-DRAFT", "game_id": "biped", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "draft",
+      "content": "隔离测试用的未审核草稿：声称有一键通关键。该句是故意构造的测试数据，不是游戏事实。",
+      "source_ref": "synthetic-filter-fixture", "source_tier": "community", "keywords": ["一键通关", "秘籍"], "applicability": [], "valid_from": "2026-10-29", "valid_to": null, "test_fixture": true
+    },
+    {
+      "evidence_id": "FIXTURE-OTHER-GAME", "game_id": "other-game", "ruleset_scope": "biped-steam-public-docs", "mode_scope": ["public_rules"], "status": "published",
+      "content": "其他游戏隔离测试卡片，不是 Biped 知识。", "source_ref": "synthetic-filter-fixture", "source_tier": "community", "keywords": ["操作", "鼠标"], "applicability": [], "valid_from": "2026-10-29", "valid_to": null, "test_fixture": true
+    }
+  ]
+}

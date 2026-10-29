@@ -1,0 +1,9 @@
+{
+  "case_id": "B04",
+  "passed": false,
+  "issues": [
+    "reason_code"
+  ],
+  "decision": "clarify",
+  "reason_code": "missing_precise_instruction_context"
+}

@@ -1,0 +1,19 @@
+{
+  "game_id": "biped",
+  "coach_id": "biped-beginner-coach",
+  "decision": "answer",
+  "player_text": "手柄的两个摇杆各控制机器人的一条腿，配合操作两条腿就能移动和进行交互。",
+  "evidence_ids": [
+    "K-CONTROL"
+  ],
+  "missing_conditions": [],
+  "reason_code": "supported_control_explanation",
+  "versions": {
+    "skill": "not_loaded",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B01"
+}

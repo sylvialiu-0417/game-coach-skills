@@ -1,0 +1,9 @@
+{
+  "case_id": "B09",
+  "passed": false,
+  "issues": [
+    "decision"
+  ],
+  "decision": "clarify",
+  "reason_code": "version_unknown"
+}

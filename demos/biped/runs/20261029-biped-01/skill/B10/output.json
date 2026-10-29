@@ -1,0 +1,20 @@
+{
+  "game_id": "unconfigured-game",
+  "coach_id": "biped-beginner-coach",
+  "decision": "abstain",
+  "player_text": "当前游戏尚未完成适配，检索也未返回可用的操作说明，因此无法可靠确认两个摇杆分别控制什么。",
+  "evidence_ids": [],
+  "missing_conditions": [
+    "当前游戏的有效适配配置",
+    "适用的已发布操作说明"
+  ],
+  "reason_code": "unsupported_game",
+  "versions": {
+    "skill": "6.2",
+    "kb_snapshot": "seed-v1",
+    "adapter": "biped-demo-1.0",
+    "coach_config": "beginner-1.0",
+    "model": "gpt-6.1-sol"
+  },
+  "trace_id": "B10"
+}

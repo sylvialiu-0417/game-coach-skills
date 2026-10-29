@@ -1,0 +1,9 @@
+{
+  "case_id": "B10",
+  "passed": false,
+  "issues": [
+    "decision"
+  ],
+  "decision": "clarify",
+  "reason_code": "unsupported_game"
+}
